@@ -32,3 +32,6 @@ line3
 
 # 布尔类型
 print(3 > 2)
+
+# python 中的占位
+print('Hello, %s' % 'world')
