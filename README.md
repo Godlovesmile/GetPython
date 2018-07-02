@@ -91,3 +91,40 @@ else:
 
 6. 可变参数: 仅仅在参数前面加了一个*号  
 
+### 基础四
+高级特性
+
+1. 切片
+Python提供了切片（Slice）操作符，能大大简化这种操作
+```
+L = ['jack', 'tom', 'xiaohong', 'jerri', 'red']
+L[0:3]
+```
++ 通过下标[0:3], 包头不包尾
++ [-1]倒数获取元素
++ 只写[:]就可以原样复制一个list
++ tuple和字符串有同样操作
+
+2. 迭代
+在Python中，迭代是通过for ... in来完成的 
++ for...in可以操作在list, tuple, 对象上
++ 可以迭代字典, 默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.values()，如果要同时迭代key和value，可以用for k, v in d.items()。
++ 判断一个对象是可迭代对象, 方法是通过collections模块的Iterable类型
+```
+from collections import Iterable 
+print(isinstance('abc', Iterable))
+```
+
+3. 列表生成式
+4. 生成器
+5. 迭代器
+
+
+### 基础五
+高阶函数
+一个函数就可以接收另一个函数作为参数，这种函数就称之为高阶函数。
+
+1. map/reduce
+
+
+
